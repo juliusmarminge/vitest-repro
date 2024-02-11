@@ -1,0 +1,12 @@
+diff --git a/esm/src/search.js b/esm/src/search.js
+index 8f7a138a4596cebf463c3bf099fca41d83d7a2a2..a118ffc0a5891f4ec7e187c7bef4048a9f2dab79 100644
+--- a/esm/src/search.js
++++ b/esm/src/search.js
+@@ -4,6 +4,7 @@ import {
+   arrayToString
+ } from './utils.js';
+ function coerce(a) {
++  console.log("[@web3-storage/multipart-parser]: a = ", a, "a instanceof Uint8Array = ", a instanceof Uint8Array)
+   if (a instanceof Uint8Array) {
+     return index => a[index];
+   }
